@@ -1,11 +1,14 @@
 import { PrimeiroComponente } from "./components/PrimeiroComponente";
+import { Template } from "./components/Template";
 
-export default function Home() {
+
+export default function   Galeria() {
   return (
     <div>
       <main>
-        <h1>Welcome to Next.js!</h1>
-        <PrimeiroComponente />
+        <Template>
+           <h1>Galeria</h1>
+        </Template>
       </main>
     </div>
 
