@@ -1,25 +1,28 @@
-'use client'
+'use client';
 
 interface PrimeiroComponenteProps {
-mensagem: string;
-mensagemBotao?: string;
-
+  // Defina as propriedades do componente aqui, se necessário
+  mensagem?: string;
+  mesagemBotao?: string; // Propriedade opcional
 }
 
-export const PrimeiroComponente = ({ mensagem, mensagemBotao }): PrimeiroComponenteProps => {
-  //function clique() {
-    //console.log('você clicou no botão!');
-   // alert("você clicou no botãoc")
-  //}
+export const PrimeiroComponente = ({ mensagem, mesagemBotao }: PrimeiroComponenteProps) => {
+
+  // function clique() { 
+  //   console.log('Você clicou no botão!');  //   alert('Você clicou no botão!');
+  // }
+
   const clique = () => {
-    console.log('você clicou no botão');
-    alert(mensagemBotao);
+    console.log('Você clicou no botão!');
+    alert(mesagemBotao); 
   }
-  return (
-    <div>
+  
+  return(
+    <div> 
       <h1>Primeiro Componente</h1>
       <p>{mensagem}</p>
-      <button onClick={(clique)}>Clique aqui!</button>
+      <button onClick={clique}>Clique aqui!</button>
+
     </div>
   );
-}
+} 
